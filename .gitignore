@@ -1,0 +1,9 @@
+wind_3D16X16.npy
+wind_label_3D16X16.npy
+/wandb/
+notebooks
+ipynb_checkpoints
+/checkpoints/
+/raw_data/
+/training_data/
+/myenv/

@@ -1,0 +1,6 @@
+einops>=0.7.0
+pyyaml>=6.0
+pytorch-fid>=0.3.0
+clean-fid>=0.1.35
+wandb
+pandas

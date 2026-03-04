@@ -1,0 +1,39 @@
+# config/train_25pct.yaml
+exp_name: ddpm_skycc_25pct
+dataset:
+  fraction: 0.25                   # 25% data
+  data_folder: /content/drive/MyDrive/Research/skyreseach/Data/training_data/train
+  labels_file: /content/drive/MyDrive/Research/skyreseach/Data/training_data/train_labels.csv
+  meta_file: /content/drive/MyDrive/Research/skyreseach/Data/training_data/train_metadata.csv
+  npy_images: /content/drive/MyDrive/Research/skyreseach/wind_3D16X16.npy
+  npy_labels: /content/drive/MyDrive/Research/skyreseach/wind_label_3D16X16.npy
+
+model:
+  height: 16
+  n_feat: 64
+  n_cfeat: 5
+
+train:
+  batch_size: 32
+  epochs: 40
+  lr: 1e-4
+  save_every: 4
+  save_dir: /content/drive/MyDrive/Research/skyreseach/checkpoints/
+
+diffusion:
+  timesteps: 500
+  beta1: 1e-4
+  beta2: 0.02
+
+wandb:
+  enabled: true
+  project: DDPM-SKYCC
+  group: t4-testing
+  name: ddpm-25pct
+
+tune:
+  sweep: false
+  grid:
+    batch_size: [16, 32]
+    lr: [1e-4, 5e-4]
+    n_feat: [32, 64]

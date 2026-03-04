@@ -1,0 +1,37 @@
+# config_no_labels.yaml
+exp_name: ddpm_skycc_H100_no_labels
+
+dataset:
+  fraction: 1.0
+  npy_images: training_data/wind_3D16X16.npy
+  pregenerated_noise_dir: pregenerated_noise
+
+model:
+  height: 16
+  n_feat: 128        # Larger model dimension for H100
+  n_cfeat: 0         # NO CONTEXT - unconditional generation
+
+train:
+  batch_size: 2    # Max out GPU RAM
+  epochs: 10        # Adjust for your research needs
+  lr: 1e-4
+  save_every: 5
+  save_dir: checkpoints
+
+diffusion:
+  timesteps: 500
+  beta1: 1e-4
+  beta2: 0.02
+
+wandb:
+  enabled: true
+  project: DDPM-SKYCC
+  group: h100_no_labels
+  name: ddpm-H100-no-labels-unconditional
+
+tune:
+  sweep: false
+  grid:
+    batch_size: [64, 128, 256]
+    lr: [1e-4, 5e-4]
+    n_feat: [64, 128]
