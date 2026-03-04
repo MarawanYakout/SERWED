@@ -280,7 +280,7 @@ Please ensure your code follows the existing style and includes appropriate docu
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This work is licensed under the Creative Commons Attribution 4.0 International License. - see the [LICENSE](LICENSE) file for details.
 
 ---
 
