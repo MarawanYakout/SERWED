@@ -96,7 +96,7 @@ python scripts/train_cli.py --data_np training_data/wind_3D16X16.npy --pregenera
 ```
 
 >[!NOTE]
-> The training is mainly in `scripts/train_cli.py` which uses `src_refactored/trainer.py` for the training loop.
+> The training is mainly in `scripts/train_cli.py` which uses `src/trainer.py` for the training loop.
 
 ### Testing / Visualization
 ```bash
@@ -285,7 +285,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Original DDPM paper: 
+- Original DDPM paper: Paper Submission Processing
 
 ---
 ## Contact
@@ -294,5 +294,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **GitHub**: [@MarawanYakout](https://github.com/MarawanYakout)
 - **Email**: mmyay1@student.london.ac.uk | yakout@marawan.net
 - **LinkedIn**: [linkedin.com/in/marawanyakout](https://www.linkedin.com/in/marawanyakout)
--
 ---
