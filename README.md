@@ -5,7 +5,8 @@
 [![Status](https://img.shields.io/badge/status-alpha-orange.svg)](https://github.com/MarawanYakout/DDPM-SKY-CC)
 
 
-A context-free DDPM (Denoising Diffusion Probabilistic Model) training pipeline for wind-speed imagery using pre-generated noise for fully deterministic and reproducible experiments.
+A context-free DDPM (Denoising Diffusion Probabilistic Model) training pipeline for wind-speed imagery using pre-generated NASA Global Precipitation Measurement (GPM) satellite
+data, combined with NASA Geostationary Operational Environmental Satellite (GOES) imagery RI data to identify intense convective bursts  noise for fully deterministic and reproducible experiments.
 
 ---
 
