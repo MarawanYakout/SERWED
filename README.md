@@ -286,8 +286,9 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 
 ## Acknowledgments
 
-- Original DDPM paper: Paper Submission Processing
-
+- arXiv: https://arxiv.org/abs/2603.06782
+- arXiv Paper PDF: https://arxiv.org/pdf/2603.06782
+- MDPO : Paper Processing ..
 ---
 ## Contact
 
